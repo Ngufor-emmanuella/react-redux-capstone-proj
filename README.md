@@ -1,70 +1,192 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+  <img src="https://raw.githubusercontent.com/microverseinc/readme-template/master/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-In the project directory, you can run:
+  <h3><b>Microverse README Template</b></h3>
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- TABLE OF CONTENTS -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 📗 Table of Contents
 
-### `npm test`
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Author](#author)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- PROJECT DESCRIPTION -->
 
-### `npm run build`
+# 📖 Metrics-Web-App <a name="about-project"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Metrics-Web-App** is a mobile web application to that is used to check a list of metrics (numeric values) that will be created by making use of React and Redux and Data from the ACNH API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<div align="center">
+  <a href="https://ibb.co/DbFM7dv"><img src="https://i.ibb.co/MhH1Rdt/3-devices-white.png" alt="3-devices-white" border="0"></a>
+  <br/>
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm run eject`
+### Tech Stack <a name="tech-stack"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
+    <li><a href="">CSS</a></li>
+    <li><a href="https://html.com/">HTML</a></li>
+  </ul>
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- Features -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Key Features <a name="key-features"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> Description of 1-3 key features of the application.
 
-## Learn More
+- **When the page loads, the webapp shows the list of art pieces that could be filtered out by some parameter**
+- **These art pieces are gotten from an API and when the user clicks (or taps) on a piece, the application navigates to the details page.**
+- **On the details page, the webapp retrieves data from the API to show detailed data of the piece that was clicked on and when the user clicks on the "Back" button (<), the user navigates back to the home page**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- LIVE DEMO -->
 
-### Code Splitting
+## 🚀 Live Demo <a name="live-demo"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Vintage Collections Web APP](https://vintage-art-collection.netlify.app/)
 
-### Analyzing the Bundle Size
+## Loom Presentation Video Link
+- [Project Documentation](https://www.loom.com/share/8d32484262494a13b3ddcfea516ebf6e)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Making a Progressive Web App
+<!-- GETTING STARTED -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 💻 Getting Started <a name="getting-started"></a>
 
-### Advanced Configuration
+> To get a local copy up and running, follow these steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Prerequisites
 
-### Deployment
+In order to run this project you need:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- A Desktop or Laptop Computer running on with Windows, Mac OS or Linux operating system.
+- Git installed on the Computer
+- Nodejs installed on the Computer
+- A browser installed on the Computer
 
-### `npm run build` fails to minify
+### Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Clone this repository to your desired folder:
+
+- `git clone https://github.com/NahnahAJ/Metrics-Web-App.git` if your're using https or git 
+- `git@github.com:NahnahAJ/Metrics-Web-App.git` if you prefer ssh and hit enter.
+- create a directory in your preferred location (e.g in the Desktop or Document directory)
+
+
+### Install
+
+Install this project with:
+
+- Dependencies _(a packet manager is required)_: then you run the command `npm install` in the terminal
+
+### Usage
+
+To run the project, execute the following command:
+
+- `npm run start`
+- This will run the project on localhost:3000
+
+### Run tests
+
+To run tests, run the following command:
+
+- `npm run test`
+- This will run all tests on your local machine
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Author <a name="author"></a>
+
+> I was the sole collaborator in this project.
+
+👤 **Nahnah Ahjuwah**
+
+- GitHub: [@NahnahAJ](https://github.com/NahnahAJ)
+- Twitter: [@NahnahAhjuwah](https://https://twitter.com/NahnahAhjuwah)
+- LinkedIn: [Felicia-Awuah](https://www.linkedin.com/in/felicia-awuah-gyedua/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Description of the new features for the project.
+
+- [ ] **I will design a logo that will be put in the nav bar and remove the current block of text that I have as my logo**
+- [ ] **I intend to add additional pages in the website ie. a Reference page & a Categories page**
+- [ ] **Lastly, I implement some UX improvements: include transitions and/or animations I might add more features as I move forward**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> If you like this project then kindly give me a star ⭐️ in the project repository.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments & Attribution <a name="acknowledgements"></a>
+
+> I would like to thank Microverse and [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) Owner of the original design idea. Attribution: [Creatve Commons Lincense of the Design](https://creativecommons.org/licenses/by-nc/4.0/) and Lastly the [ACHN API](http://acnhapi.com/doc#tag/Art).
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
