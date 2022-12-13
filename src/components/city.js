@@ -1,9 +1,8 @@
-import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useLocation } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
-import { fetchTown } from '../Redux/Reducers/town';
+import { fetchTown } from '../redux/reducers/town';
 import '../App.css';
 
 function City() {
@@ -20,7 +19,7 @@ function City() {
     <div className="dispay-country">
       <div>
         <div className="display">
-          <h5 className="card-name">{infoCountry.name}</h5>
+          <h4 className="card-name">{infoCountry.name}</h4>
           <p className="card-msg">
             Capital:
             {infoCountry.capital[0]}
@@ -43,12 +42,13 @@ function City() {
 
           <div className="btn-data">
             <button type="submit">
-              <NavLink className="nav-nav-link"
-              to="/pollutants"
-              state={{
-                cityname: city,
-                countryname: infoCountry.countrycode,
-              }}
+              <NavLink
+                className="nav-nav-link"
+                to="/pollutants"
+                state={{
+                  cityname: city,
+                  countryname: infoCountry.countrycode,
+                }}
               >
                 Load Data
               </NavLink>
@@ -59,5 +59,5 @@ function City() {
       ))}
     </div>
   );
-};
+}
 export default City;

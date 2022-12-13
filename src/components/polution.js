@@ -18,7 +18,7 @@ const Polls = () => {
     dispatch(Polute(inform));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);
-  const pollsData = useSelector((state => state.polsReducer));
+  const pollsData = useSelector((state) => state.polsReducer);
 
   return (
     <div className="table-gas">
