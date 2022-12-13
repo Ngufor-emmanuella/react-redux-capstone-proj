@@ -11,7 +11,7 @@ export const lookCountries = createAsyncThunk(
     const result = sum.map((country) => ({
       name: country.name.common,
       countrycode: country.cca2,
-      religion: country.religion,
+      region: country.region,
       capital: country.capital,
     }));
     return result;
