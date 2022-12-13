@@ -1,39 +1,465 @@
-.App {
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --pink: #f03f83;
+  --dark-pink: #ec4c8a;
+  --light-pink: #fc5193;
+  --T: #51fcda;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: var(--pink);
+}
+
+/* navbar */
+.nav-nav {
+  padding: 8px;
+  font-size: 20px;
+  display: flex;
+  float: right;
+}
+
+.first-link {
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  float: right;
+}
+
+.Search-Box input {
+  padding: 8px 8px;
+  margin-left: 1em;
+  border: 2px solid var(--light-pink);
   text-align: center;
+  border-radius: 5px;
+  background-color: var(--dark-pink);
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* all buttons */
+button {
+  background-color: var(--pink);
+  padding: 5px;
+  font-size: 15px;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Search-Box button {
+  padding: 0.5rem;
+  background-color: var(--pink);
+  border: 2px solid var(--light-pink);
+  border-radius: 5px;
+  margin: 0.5em;
+  color: black;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* home page */
+.info-info {
+  display: inline-flex;
+  width: 20%;
+  height: 20rem;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--light-pink);
+}
+
+.info-info:nth-child(2n + 2),
+.info-info:nth-child(0) {
+  background-color: var(--pink);
+  border: 1px solid var(--dark-pink);
+}
+
+.title-home {
+  padding: 2em;
+  width: 100%;
+  height: 20%;
+}
+
+.title-home header {
+  display: inline-flex;
+}
+
+.map {
+  width: 100%;
+  height: 20%;
+}
+
+.map-map {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 8em;
+}
+
+.map-map h2 {
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+.home-home-card {
+  font-size: 35px;
+  padding: 30px;
+}
+
+.body-body {
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+/* city page */
+.main-city {
+  margin: 0;
+  border: 1px solid var(--pink);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 20%;
+}
+
+.main-city:nth-child(even) {
+  background-color: var(--light-pink);
+}
+
+.heading {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  padding-top: 40px;
+}
+
+.display {
+  text-align: center;
+  padding: 80px;
+}
+
+.card-name {
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.city-house {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+}
+
+/* pollutiondata */
+.table-gas {
+  padding: 0.2rem;
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.table-end {
+  border: 2px solid var(--light-pink);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.table-headings th {
+  font-size: 30px;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.pollution-data {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.gas-pollution:nth-child(odd) {
+  background-color: var(--light-pink);
+}
+
+.table-headings th:nth-child(even) {
+  background-color: var(--light-pink);
+}
+
+@media only screen and (min-width: 300px) {
+  /* navbar */
+  .search-box input {
+    padding: 2px 2px;
+    font-size: 9px;
   }
 
-  to {
-    transform: rotate(360deg);
+  .search-box button {
+    margin: 0.4em;
+    padding: 2px 2px;
+    font-size: 8px;
+  }
+
+  .nav-nav-link {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .first-link {
+    padding: 14px;
+    font-size: 12px;
+  }
+
+  /* home page */
+  .map img {
+    width: 110%;
+    height: 20%;
+  }
+
+  .map-map {
+    width: 100%;
+    height: 20%;
+    font-size: 10px;
+  }
+
+  .info-info {
+    width: 50%;
+    height: 12rem;
+  }
+
+  .info-info:nth-of-type(2n+1) {
+    background-color: var(--pink);
+  }
+
+  .home-home-card {
+    font-size: 25px;
+    padding: 12px;
+  }
+
+  .body-body {
+    font-size: 18px;
+  }
+
+  .card-name {
+    font-size: 25px;
+  }
+
+  /* city page */
+  .main-city {
+    display: inline-block;
+    width: 100%;
+    height: 15%;
+  }
+
+  .city-house {
+    height: 8rem;
+    float: left;
+  }
+
+  .heading {
+    width: 140%;
+    height: 15%;
+    font-size: 28px;
+    padding-right: 1em;
+  }
+
+  .btn-data button {
+    margin-left: 5.8rem;
+    margin-top: 2.5em;
+  }
+
+  .display {
+    height: 15%;
+  }
+
+  /* pollutiondata page */
+  .table-gas {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .table-headings th {
+    font-size: 12px;
+  }
+
+  .gas-pollution {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  /* home page */
+  .title-home header {
+    margin-left: -1em;
+  }
+
+  .info-info {
+    width: 50%;
+  }
+
+  .main-city {
+    width: 100%;
+  }
+
+  .main-city:nth-child(even) {
+    background-color: var(--light-pink);
+  }
+
+  /* pollutiondata page */
+  .table-gas {
+    padding: 0.2rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  /* home page */
+  .title-home header {
+    margin-left: -1em;
+    width: 100%;
+    height: 50%;
+  }
+
+  .info-info {
+    width: 100%;
+  }
+
+  .main-city {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* navbar */
+  .nav-nav {
+    padding: 8px;
+    font-size: 20px;
+    display: flex;
+    float: right;
+  }
+
+  .first-link {
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    float: right;
+  }
+
+  .search-box input {
+    padding: 8px 8px;
+    margin-left: 1em;
+    border: 2px solid var(--light-pink);
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--dark-pink);
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  /* all buttons */
+  button {
+    background-color: var(--pink);
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+  }
+
+  .search-box button {
+    padding: 8px 8px;
+    font-size: 15px;
+  }
+
+  /* home page */
+  .title-home {
+    padding: 2em;
+    width: 100%;
+    height: 20%;
+  }
+
+  .title-home header {
+    display: inline-flex;
+  }
+
+  .map {
+    width: 70%;
+    height: 20%;
+  }
+
+  .map-map {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 8em;
+  }
+
+  .map-map h1 {
+    padding-top: 5em;
+    padding-left: 2em;
+  }
+
+  .home-home-card {
+    font-size: 35px;
+    padding: 30px;
+  }
+
+  .info-info {
+    width: 20%;
+    height: 35vh;
+  }
+
+  /* city page */
+  .display {
+    height: 15%;
+    font-size: 28px;
+  }
+
+  .card-name {
+    font-size: 35px;
+  }
+
+  .card-msg {
+    font-size: 25px;
+  }
+
+  .main-city {
+    width: 20%;
+    height: 35vh;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 34px;
+    padding-left: 4em;
+    text-align: center;
+  }
+
+  .btn-data {
+    padding-right: 5.5em;
+  }
+
+  /* pollutiondata page */
+  .table-gas {
+    padding: 0.2rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+
+  .table-headings th {
+    font-size: 25px;
+  }
+
+  .gas-pollution {
+    font-size: 18px;
   }
 }

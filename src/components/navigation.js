@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Container, Nav } from 'react-bootstrap';
+import '../App.css';
 
 function Navigation() {
   const link = [
