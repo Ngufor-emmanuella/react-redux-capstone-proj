@@ -88,9 +88,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 👤 **Ngufor Emmanuella**
 
-- GitHub: [@TechnoAndy](https://github.com/Ngufor-emmanuella)
-- Twitter: [ADiegaardt](https://twitter.com/Ngufor-emmanuella)
-- LinkedIn: [Andrea Diegaardt](https://www.linkedin.com/in/Ngufor-emmanuella)
+- GitHub: [@Ngufor-emmanuella](https://github.com/Ngufor-emmanuella)
+- Twitter: [Ngufor-emmanuella](https://twitter.com/Ngufor-emmanuella)
+- LinkedIn: [Ngufor-emmanuella](https://www.linkedin.com/in/Ngufor-emmanuella)
 
 
 ## Contributing
