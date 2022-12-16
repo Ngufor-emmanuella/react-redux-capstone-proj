@@ -28,7 +28,7 @@
 # react-redux-capstone-proj
 
 
-**Air-Pollution** This is a SPA mobile web application to check a list of metrics for the air quality of a specified area.
+**Air-Pollution** This is a SPA mobile web application to check a list of metrics for the air quality of a specified area.and states
 
 ## Built With
 
