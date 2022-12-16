@@ -11,8 +11,7 @@ const Cities = () => {
   const countryInfo = location.state.info;
   useEffect(() => {
     dispatch(fetchCities(countryInfo.name));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dispatch]);
+  }, [countryInfo.name, dispatch]);
   const cities = useSelector((state) => state.citiesReducer);
 
   return (

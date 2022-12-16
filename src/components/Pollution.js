@@ -16,8 +16,7 @@ const Pollution = () => {
   const info = location.state;
   useEffect(() => {
     dispatch(airpollution(info));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dispatch]);
+  }, [dispatch, info]);
   const pollutionData = useSelector((state) => state.pollutionReducer);
 
   return (
