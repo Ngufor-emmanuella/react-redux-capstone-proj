@@ -4,35 +4,35 @@ const url = 'https://restcountries.com/v3.1/region/africa';
 const FETCH = 'FETCH';
 const FILTER = 'FILTER';
 
-export const lookCountries = createAsyncThunk(
+export const fetchCountries = createAsyncThunk(
   FETCH,
   async () => {
-    const sum = await (fetch(url)).then((res) => res.json());
-    const result = sum.map((country) => ({
+    const data = await (fetch(url)).then((res) => res.json());
+    const response = data.map((country) => ({
       name: country.name.common,
       countrycode: country.cca2,
       region: country.region,
       capital: country.capital,
     }));
-    return result;
+    return response;
   },
 );
 
-export const lookThroughCountries = (sum = '') => (
+export const filteredCountries = (data = '') => (
   {
     type: FILTER,
-    payload: sum,
+    payload: data,
   }
 );
 
-const countriesReducer = (state = [], action) => {
+const countryReducer = (state = [], action) => {
   switch (action.type) {
-    case `${FETCH}/fullfilled`: {
+    case `${FETCH}/fulfilled`: {
       return action.payload;
     }
 
     case FILTER: {
-      const newState = state.filter((e) => e.name.toString().toLowerCase()
+      const newState = state.filter((el) => el.name.toString().toLowerCase()
         .includes(action.payload.toString().toLowerCase()));
       return newState;
     }
@@ -42,4 +42,4 @@ const countriesReducer = (state = [], action) => {
   }
 };
 
-export default countriesReducer;
+export default countryReducer;

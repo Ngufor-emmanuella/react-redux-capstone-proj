@@ -2,62 +2,63 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useLocation } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
-import { fetchTown } from '../redux/reducers/town';
+import { fetchCities } from '../Redux/Reducers/Cities';
 import '../App.css';
 
-function City() {
+const Cities = () => {
   const dispatch = useDispatch();
   const location = useLocation();
-  const infoCountry = location.state.info;
+  const countryInfo = location.state.info;
   useEffect(() => {
-    dispatch(fetchTown(infoCountry.name));
+    dispatch(fetchCities(countryInfo.name));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);
-  const citys = useSelector((state) => state.townReducer);
+  const cities = useSelector((state) => state.citiesReducer);
 
   return (
-    <div className="dispay-country">
-      <div>
-        <div className="display">
-          <h4 className="card-name">{infoCountry.name}</h4>
-          <p className="card-msg">
-            Capital:
-            {infoCountry.capital[0]}
-            <br />
-            No. of. cities:
-            {citys.data?.length}
-            <br />
-          </p>
-          <p className="card-msg">
-            Region:
-            {infoCountry.region}
-          </p>
+    <section>
+      <div className="countryInfoContainer">
+        <div>
+          <div className="countryInfo">
+            <h5 className="card-heading">{countryInfo.name}</h5>
+            <p className="card-t">
+              Capital:
+              {countryInfo.capital[0]}
+              <br />
+              No. of cities:
+              {cities.data?.length}
+              <br />
+            </p>
+            <p className="card-text">
+              Region:
+              {countryInfo.region}
+            </p>
+          </div>
         </div>
+        {cities.data?.map((city) => (
+          <div className="cityBlockContainer" key={uuidv4()}>
+            <div className="cityBlock">
+              <div className="city-headline">{city}</div>
+            </div>
+            <div className="load-data-btn">
+              <button type="submit">
+                <NavLink
+                  className="nav-link"
+                  to="/pollutiondata"
+                  state={{
+                    cityname: city,
+                    countryname: countryInfo.countrycode,
+                  }}
+                >
+                  Load Data
+                </NavLink>
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
-      {citys.data?.map((city) => (
-        <div className="main-city" key={uuidv4()}>
-          <div className="city-house">
-            <h2 className="heading">{city}</h2>
-          </div>
-
-          <div className="btn-data">
-            <button type="submit">
-              <NavLink
-                className="nav-nav-link"
-                to="/pollutants"
-                state={{
-                  cityname: city,
-                  countryname: infoCountry.countrycode,
-                }}
-              >
-                Load Data
-              </NavLink>
-            </button>
-          </div>
-
-        </div>
-      ))}
-    </div>
+    </section>
   );
-}
-export default City;
+};
+
+export default Cities;

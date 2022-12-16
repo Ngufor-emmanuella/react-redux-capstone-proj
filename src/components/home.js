@@ -3,76 +3,74 @@ import { Button, Container } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { NavLink } from 'react-router-dom';
-import { lookCountries, lookThroughCountries } from '../redux/reducers/country';
+import { fetchCountries, filteredCountries } from '../Redux/Reducers/Countries';
 
-function Home() {
-  let nameCountry;
+const Home = () => {
+  let countryName;
 
   const dispatch = useDispatch();
-  const countries = useSelector((state) => state.countriesReducer);
+  const countries = useSelector((state) => state.countryReducer);
 
   useEffect(() => {
-    dispatch(lookCountries());
+    dispatch(fetchCountries());
   }, [dispatch]);
 
   return (
-    <div className="house">
-      <div className="search-box">
+    <div className="home">
+      <div className="searchBoxOuter">
         <input
-          className="search"
+          className="countrySearch"
           type="text"
-          placeholder="Name of country"
-          value={nameCountry}
+          placeholder="Country Name"
+          value={countryName}
           onChange={(e) => {
-            nameCountry = e.target.value;
+            countryName = e.target.value;
           }}
         />
         <Button
-          variant="secondary"
           type="button"
           onClick={async () => {
-            await dispatch(lookCountries());
-            dispatch(lookThroughCountries(nameCountry));
+            await dispatch(fetchCountries());
+            dispatch(filteredCountries(countryName));
           }}
         >
           Search
         </Button>
       </div>
-
-      <div className="title-home">
+      <div className="home-heading">
         <header>
-          <div className="map">
-            <img src="./africa.png" alt="African map" />
+          <div className="map-image">
+            <img src="./africa.png" alt="Map Of Africa" />
           </div>
-          <div className="map-map">
-            <h2>
+          <div className="map-heading">
+            <h1>
               Quality of air in
               <br />
               Africa.
-            </h2>
+            </h1>
           </div>
         </header>
       </div>
 
-      <Container className="countries-con">
+      <Container className="home-countries">
         {countries.map((country) => (
-          <div key={uuidv4()} className="info-info">
-            <div className="carding">
-              <div className="home-home-card">{country.name}</div>
-              <div className="body-body">
+          <div key={uuidv4()} className="countryInfo">
+            <div className="card-t">
+              <div className="home-card-heading">{country.name}</div>
+              <div className="card-body">
                 {country.countrycode}
                 <br />
                 {country.region}
               </div>
               <button type="submit">
                 <NavLink
-                  className="nav-nav-link"
-                  to="/town"
+                  className="nav-link "
+                  to="/city"
                   state={{
                     info: country,
                   }}
                 >
-                  Visite Cities
+                  Visit Cities
                 </NavLink>
               </button>
             </div>
@@ -81,5 +79,6 @@ function Home() {
       </Container>
     </div>
   );
-}
+};
+
 export default Home;

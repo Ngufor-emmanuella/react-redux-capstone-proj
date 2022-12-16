@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Polls 1`] = `
+exports[`Pollution 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

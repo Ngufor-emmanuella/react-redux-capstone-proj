@@ -25,7 +25,7 @@
   - [License](#license)
 
 
-# Air-Pollution
+# react-redux-capstone-proj
 
 
 **Air-Pollution** This is a SPA mobile web application to check a list of metrics for the air quality of a specified area.
@@ -55,7 +55,7 @@
 
 ### Setup
 
-1. Clone this project on your local machine using the following command on your Git Bash: `https://github.com/TechnoAndy/air-pollution-1`
+1. Clone this project on your local machine using the following command on your Git Bash: `https://github.com/Ngufor-emmanuella/react-redux-capstone-proj`
 
 2. Browse to project directory `cd air-pollution-1`
 

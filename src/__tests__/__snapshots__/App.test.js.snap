@@ -1,103 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home 1`] = `
+exports[`App 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="house"
+        class="home"
       >
         <div
-          class="search-box"
+          class="searchBoxOuter"
         >
           <input
-            class="search"
-            placeholder="Name of country"
+            class="countrySearch"
+            placeholder="Country Name"
             type="text"
             value=""
           />
           <button
-            class="btn btn-secondary"
+            class="btn btn-primary"
             type="button"
           >
             Search
           </button>
         </div>
         <div
-          class="title-home"
+          class="home-heading"
         >
           <header>
             <div
-              class="map"
+              class="map-image"
             >
               <img
-                alt="African map"
+                alt="Map Of Africa"
                 src="./africa.png"
               />
             </div>
             <div
-              class="map-map"
+              class="map-heading"
             >
-              <h2>
+              <h1>
                 Quality of air in
                 <br />
                 Africa.
-              </h2>
+              </h1>
             </div>
           </header>
         </div>
         <div
-          class="countries-con container"
+          class="home-countries container"
         />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="house"
+      class="home"
     >
       <div
-        class="search-box"
+        class="searchBoxOuter"
       >
         <input
-          class="search"
-          placeholder="Name of country"
+          class="countrySearch"
+          placeholder="Country Name"
           type="text"
           value=""
         />
         <button
-          class="btn btn-secondary"
+          class="btn btn-primary"
           type="button"
         >
           Search
         </button>
       </div>
       <div
-        class="title-home"
+        class="home-heading"
       >
         <header>
           <div
-            class="map"
+            class="map-image"
           >
             <img
-              alt="African map"
+              alt="Map Of Africa"
               src="./africa.png"
             />
           </div>
           <div
-            class="map-map"
+            class="map-heading"
           >
-            <h2>
+            <h1>
               Quality of air in
               <br />
               Africa.
-            </h2>
+            </h1>
           </div>
         </header>
       </div>
       <div
-        class="countries-con container"
+        class="home-countries container"
       />
     </div>
   </div>,

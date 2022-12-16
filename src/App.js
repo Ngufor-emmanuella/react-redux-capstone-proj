@@ -1,18 +1,18 @@
 /* eslint-disable import/no-cycle */
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/home';
-import City from './components/city';
-import Navigation from './components/navigation';
-import Polls from './components/polution';
+import Cities from './Components/City';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
+import Pollution from './Components/Pollution';
 
 function App() {
   return (
     <Router>
-      <Navigation />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/city" element={<City />} />
-        <Route path="/pollutants" element={<Polls />} />
+        <Route path="/city" element={<Cities />} />
+        <Route path="/pollutiondata" element={<Pollution />} />
       </Routes>
     </Router>
   );
