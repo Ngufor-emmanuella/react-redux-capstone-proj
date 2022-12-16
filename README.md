@@ -39,9 +39,9 @@
 
 ## Live Demo
 
-- [Live Demo Link](https://admirable-yeot-36b7de.netlify.app/)
+- [Live Demo Link](https://resonant-raindrop-6d1bf0.netlify.app)
 - [Video Link](https://www.loom.com/share/391a7a0ae1ab43918a9fb69f1fc38c25)
-- [Video Link 2] (https://www.loom.com/share/391a7a0ae1ab43918a9fb69f1fc38c25)
+- [Video Link 2] (https://resonant-raindrop-6d1bf0.netlify.app)
 
 
 ## Getting Started
