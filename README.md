@@ -39,7 +39,7 @@
 
 ## Live Demo
 
-- [Live Demo Link]()
+- [Live Demo Link](https://admirable-yeot-36b7de.netlify.app/)
 - [Video Link](https://www.loom.com/share/391a7a0ae1ab43918a9fb69f1fc38c25)
 - [Video Link 2] (https://www.loom.com/share/391a7a0ae1ab43918a9fb69f1fc38c25)
 
