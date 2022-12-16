@@ -40,8 +40,8 @@
 ## Live Demo
 
 - [Live Demo Link]()
-- [Video Link]()
-- [Video Link 2] ()
+- [Video Link](https://www.loom.com/share/391a7a0ae1ab43918a9fb69f1fc38c25)
+- [Video Link 2] (https://www.loom.com/share/391a7a0ae1ab43918a9fb69f1fc38c25)
 
 
 ## Getting Started
