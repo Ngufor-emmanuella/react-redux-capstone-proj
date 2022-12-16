@@ -40,7 +40,7 @@
 ## Live Demo
 
 - [Live Demo Link](https://resonant-raindrop-6d1bf0.netlify.app)
-- [Video Link](https://www.loom.com/share/391a7a0ae1ab43918a9fb69f1fc38c25)
+- [Video Link](https://www.loom.com/share/8894ffc9171f4daca0a7a25fe7c36817)
 - [Video Link 2] (https://resonant-raindrop-6d1bf0.netlify.app)
 
 
