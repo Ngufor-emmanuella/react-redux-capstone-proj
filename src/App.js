@@ -1,9 +1,9 @@
 /* eslint-disable import/no-cycle */
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Cities from './Components/City';
-import Home from './Components/Home';
-import Navbar from './Components/Navbar';
-import Pollution from './Components/Pollution';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Pollution from './components/Pollution';
 
 function App() {
   return (
