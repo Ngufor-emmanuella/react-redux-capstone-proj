@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../Redux/ConfigureStore';
-import Home from '../Components/Home';
+import Home from '../components/Home';
 
 it('Home', () => {
   const utils = render(
