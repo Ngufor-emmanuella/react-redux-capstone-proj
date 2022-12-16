@@ -4,8 +4,8 @@ import '@testing-library/jest-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../Redux/ConfigureStore';
-import City from '../Components/City';
-import Home from '../Components/Home';
+import City from '../components/City';
+import Home from '../components/Home';
 import Pollution from '../Components/Pollution';
 
 it('App', () => {
