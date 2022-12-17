@@ -4,7 +4,7 @@ const url = 'https://restcountries.com/v3.1/region/africa';
 const FETCH = 'FETCH';
 const FILTER = 'FILTER';
 
-export const fetchCountries = createAsyncThunk(
+export const fetchOfCountries = createAsyncThunk(
   FETCH,
   async () => {
     const data = await (fetch(url)).then((res) => res.json());
@@ -18,7 +18,7 @@ export const fetchCountries = createAsyncThunk(
   },
 );
 
-export const filteredCountries = (data = '') => (
+export const filteredByCountries = (data = '') => (
   {
     type: FILTER,
     payload: data,

@@ -3,16 +3,16 @@ import { NavLink } from 'react-router-dom';
 import '../App.css';
 
 const Navigation = () => {
-  const links = [
+  const linked = [
     {
       id: 1,
       text: 'Home Page',
       path: '/',
     },
   ];
-  const listOfLinks = links.map((link) => (
-    <li key={link.id} className="like">
-      <NavLink className="like" to={link.path}>{link.text}</NavLink>
+  const listLinks = linked.map((links) => (
+    <li key={links.id} className="like">
+      <NavLink className="like" to={links.path}>{links.text}</NavLink>
     </li>
   ));
   return (
@@ -22,7 +22,7 @@ const Navigation = () => {
           <a className="premiere-lynk" href="/">Countries</a>
           <div>
             <ul>
-              {listOfLinks}
+              {listLinks}
             </ul>
           </div>
         </div>

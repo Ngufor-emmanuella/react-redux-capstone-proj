@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 const url = 'https://countriesnow.space/api/v0.1/countries/cities';
 const FETCH_CITY = 'FETCH_CITY';
 
-export const fetchCities = createAsyncThunk(
+export const fetchOfCities = createAsyncThunk(
   FETCH_CITY,
   async (city) => {
     const data = await (fetch(url, {
@@ -20,7 +20,7 @@ export const fetchCities = createAsyncThunk(
   },
 );
 
-const citiesReducer = (state = [], action) => {
+const citysReducer = (state = [], action) => {
   switch (action.type) {
     case `${FETCH_CITY}/fulfilled`: {
       return action.payload;
@@ -31,4 +31,4 @@ const citiesReducer = (state = [], action) => {
   }
 };
 
-export default citiesReducer;
+export default citysReducer;

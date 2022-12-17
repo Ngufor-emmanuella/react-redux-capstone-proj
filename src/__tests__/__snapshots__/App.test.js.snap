@@ -32,7 +32,7 @@ Object {
               class="map-map"
             >
               <img
-                alt="Map Of Africa"
+                alt="African map"
                 src="./africa.png"
               />
             </div>
@@ -81,7 +81,7 @@ Object {
             class="map-map"
           >
             <img
-              alt="Map Of Africa"
+              alt="African map"
               src="./africa.png"
             />
           </div>

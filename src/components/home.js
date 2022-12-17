@@ -3,16 +3,16 @@ import { Button, Container } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { NavLink } from 'react-router-dom';
-import { fetchCountries, filteredCountries } from '../Redux/Reducers/Countries';
+import { fetchOfCountries, filteredByCountries } from '../Redux/Reducers/Countries';
 
 const Maison = () => {
-  let countryName;
+  let countrysNames;
 
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countryReducer);
 
   useEffect(() => {
-    dispatch(fetchCountries());
+    dispatch(fetchOfCountries());
   }, [dispatch]);
 
   return (
@@ -22,16 +22,16 @@ const Maison = () => {
           className="payee-regarde"
           type="text"
           placeholder="Name of country"
-          value={countryName}
+          value={countrysNames}
           onChange={(e) => {
-            countryName = e.target.value;
+            countrysNames = e.target.value;
           }}
         />
         <Button
           type="button"
           onClick={async () => {
-            await dispatch(fetchCountries());
-            dispatch(filteredCountries(countryName));
+            await dispatch(fetchOfCountries());
+            dispatch(filteredByCountries(countrysNames));
           }}
         >
           Search
@@ -40,7 +40,7 @@ const Maison = () => {
       <div className="maison-pars">
         <header>
           <div className="map-map">
-            <img src="./africa.png" alt="Map Of Africa" />
+            <img src="./africa.png" alt="African map" />
           </div>
           <div className="tete-map">
             <h2>
