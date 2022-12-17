@@ -16,11 +16,11 @@ const Cities = () => {
 
   return (
     <section>
-      <div className="countryInfoContainer">
+      <div className="payee-container">
         <div>
-          <div className="countryInfo">
-            <h5 className="card-heading">{countryInfo.name}</h5>
-            <p className="card-t">
+          <div className="les-infos">
+            <h4 className="tete-disk">{countryInfo.name}</h4>
+            <p className="tete-t">
               Capital:
               {countryInfo.capital[0]}
               <br />
@@ -28,21 +28,21 @@ const Cities = () => {
               {cities.data?.length}
               <br />
             </p>
-            <p className="card-text">
+            <p className="tete-ecrie">
               Region:
               {countryInfo.region}
             </p>
           </div>
         </div>
         {cities.data?.map((city) => (
-          <div className="cityBlockContainer" key={uuidv4()}>
-            <div className="cityBlock">
-              <div className="city-headline">{city}</div>
+          <div className="payee-blockes" key={uuidv4()}>
+            <div className="ville-blo">
+              <div className="ville-tete">{city}</div>
             </div>
-            <div className="load-data-btn">
+            <div className="butn">
               <button type="submit">
                 <NavLink
-                  className="nav-link"
+                  className="like"
                   to="/pollutiondata"
                   state={{
                     cityname: city,

@@ -16,12 +16,12 @@ const Home = () => {
   }, [dispatch]);
 
   return (
-    <div className="home">
-      <div className="searchBoxOuter">
+    <div className="maison">
+      <div className="regarde-out">
         <input
-          className="countrySearch"
+          className="payee-regarde"
           type="text"
-          placeholder="Country Name"
+          placeholder="Name of country"
           value={countryName}
           onChange={(e) => {
             countryName = e.target.value;
@@ -37,34 +37,34 @@ const Home = () => {
           Search
         </Button>
       </div>
-      <div className="home-heading">
+      <div className="maison-pars">
         <header>
-          <div className="map-image">
+          <div className="map-map">
             <img src="./africa.png" alt="Map Of Africa" />
           </div>
-          <div className="map-heading">
-            <h1>
+          <div className="tete-map">
+            <h2>
               Quality of air in
               <br />
               Africa.
-            </h1>
+            </h2>
           </div>
         </header>
       </div>
 
-      <Container className="home-countries">
+      <Container className="payee-tout">
         {countries.map((country) => (
-          <div key={uuidv4()} className="countryInfo">
-            <div className="card-t">
-              <div className="home-card-heading">{country.name}</div>
-              <div className="card-body">
+          <div key={uuidv4()} className="les-infos">
+            <div className="tete-t">
+              <div className="card-home-carding">{country.name}</div>
+              <div className="tete-corpes">
                 {country.countrycode}
                 <br />
                 {country.region}
               </div>
               <button type="submit">
                 <NavLink
-                  className="nav-link "
+                  className="like"
                   to="/city"
                   state={{
                     info: country,

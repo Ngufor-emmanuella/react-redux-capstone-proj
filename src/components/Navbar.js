@@ -11,15 +11,15 @@ const Navbar = () => {
     },
   ];
   const listOfLinks = links.map((link) => (
-    <li key={link.id} className="nav-link">
-      <NavLink className="nav-link" to={link.path}>{link.text}</NavLink>
+    <li key={link.id} className="like">
+      <NavLink className="like" to={link.path}>{link.text}</NavLink>
     </li>
   ));
   return (
     <header>
       <nav>
         <div>
-          <a className="link-1" href="/">Countries</a>
+          <a className="premiere-lynk" href="/">Countries</a>
           <div>
             <ul>
               {listOfLinks}

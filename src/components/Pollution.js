@@ -20,10 +20,10 @@ const Pollution = () => {
   const pollutionData = useSelector((state) => state.pollutionReducer);
 
   return (
-    <div className="pollutionData">
+    <div className="mauvais-data">
       <table>
-        <div className="table-border">
-          <thead className="t-Heading">
+        <div className="fin-linee">
+          <thead className="trop-tete">
             <tr>
               <th>(AQI)</th>
               <th>(CO)</th>
@@ -34,16 +34,16 @@ const Pollution = () => {
               <th>Time</th>
             </tr>
           </thead>
-          <tbody className="pollution -list">
+          <tbody className="mauvaise-nombres">
             {pollutionData?.map((element) => (
               <tr key={uuidv4()}>
-                <td className="pollution-data">{element.main.aqi}</td>
-                <td className="pollution-data">{element.components.co}</td>
-                <td className="pollution-data">{element.components.no}</td>
-                <td className="pollution-data">{element.components.no2}</td>
-                <td className="pollution-data">{element.components.o3}</td>
-                <td className="pollution-data">{element.components.so2}</td>
-                <td className="pollution-data">
+                <td className="trop-mauvais">{element.main.aqi}</td>
+                <td className="trop-mauvais">{element.components.co}</td>
+                <td className="trop-mauvais">{element.components.no}</td>
+                <td className="trop-mauvais">{element.components.no2}</td>
+                <td className="trop-mauvais">{element.components.o3}</td>
+                <td className="trop-mauvais">{element.components.so2}</td>
+                <td className="trop-mauvais">
                   <Time props={element.dt} />
                 </td>
               </tr>
@@ -52,7 +52,7 @@ const Pollution = () => {
         </div>
       </table>
       {pollutionData.length === 0 && (
-        <div className="pollution -list">
+        <div className="mauvaise-nombres">
           Data for this city is currently unavailable
         </div>
       )}

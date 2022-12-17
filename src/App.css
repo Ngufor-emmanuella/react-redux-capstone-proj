@@ -24,21 +24,21 @@ body {
 }
 
 /* navbar */
-.nav-link {
+.like {
   padding: 8px;
   font-size: 20px;
   display: flex;
   float: right;
 }
 
-.link-1 {
+.premiere-lynk {
   padding: 15px;
   font-size: 20px;
   display: flex;
   float: right;
 }
 
-.searchBoxOuter input {
+.regarde-out input {
   padding: 8px 8px;
   margin-left: 1em;
   border: 2px solid var(--light-pink);
@@ -58,7 +58,7 @@ button {
   border: none;
 }
 
-.searchBoxOuter button {
+.regarde-out button {
   padding: 0.5rem;
   background-color: var(--pink);
   border: 2px solid var(--light-pink);
@@ -69,7 +69,7 @@ button {
 }
 
 /* home page */
-.countryInfo {
+.les-infos {
   display: inline-flex;
   width: 20%;
   height: 20rem;
@@ -78,50 +78,50 @@ button {
   background-color: var(--light-pink);
 }
 
-.countryInfo:nth-child(2n + 2),
-.countryInfo:nth-child(0) {
+.les-infos:nth-child(2n + 2),
+.les-infos:nth-child(0) {
   background-color: var(--pink);
   border: 1px solid var(--dark-pink);
 }
 
-.home-heading {
+.maison-pars {
   padding: 2em;
   width: 100%;
   height: 20%;
 }
 
-.home-heading header {
+.maison-pars header {
   display: inline-flex;
 }
 
-.map-image {
+.map-map {
   width: 100%;
   height: 20%;
 }
 
-.map-heading {
+.tete-map {
   font-size: 25px;
   text-align: center;
   padding-bottom: 8em;
 }
 
-.map-heading h1 {
+.tete-map h2 {
   padding-top: 2em;
   padding-left: 2em;
 }
 
-.home-card-heading {
+.card-home-carding {
   font-size: 35px;
   padding: 30px;
 }
 
-.card-body {
+.tete-corpes {
   padding-bottom: 20px;
   font-size: 25px;
 }
 
 /* city page */
-.cityBlockContainer {
+.payee-blockes {
   margin: 0;
   border: 1px solid var(--pink);
   display: inline-flex;
@@ -132,23 +132,23 @@ button {
   width: 20%;
 }
 
-.cityBlockContainer:nth-child(even) {
+.payee-blockes:nth-child(even) {
   background-color: var(--light-pink);
 }
 
-.city-headline {
+.ville-tete {
   text-align: center;
   font-size: 35px;
   color: white;
   padding-top: 40px;
 }
 
-.card-heading {
+.tete-disk {
   font-size: 35px;
   text-decoration: underline;
 }
 
-.cityBlock {
+.ville-blo {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -157,7 +157,7 @@ button {
 }
 
 /* pollutiondata page */
-.pollutionData {
+.mauvais-data {
   padding: 0.2rem;
   padding-top: 4rem;
   display: flex;
@@ -167,142 +167,142 @@ button {
   width: 100%;
 }
 
-.table-border {
+.fin-linee {
   border: 2px solid var(--light-pink);
 }
 
-.t-Heading th {
+.trop-tete th {
   font-size: 30px;
   padding: 5px;
   text-decoration: underline;
 }
 
-.pollution-data {
+.trop-mauvais {
   font-size: 18px;
   text-align: center;
   padding: 10px;
 }
 
-.pollution-data:nth-child(odd) {
+.trop-mauvais:nth-child(odd) {
   background-color: var(--light-pink);
 }
 
-.t-Heading th:nth-child(even) {
+.trop-tete th:nth-child(even) {
   background-color: var(--light-pink);
 }
 
 @media only screen and (min-width: 300px) {
   /* navbar */
-  .searchBoxOuter input {
+  .regarde-out input {
     padding: 2px 2px;
     font-size: 9px;
   }
 
-  .searchBoxOuter button {
+  .regarde-out button {
     margin: 0.4em;
     padding: 2px 2px;
     font-size: 8px;
   }
 
-  .nav-link {
+  .like {
     padding: 7px;
     font-size: 12px;
   }
 
-  .link-1 {
+  .premiere-lynk {
     padding: 14px;
     font-size: 12px;
   }
 
   /* home page */
-  .map-image img {
+  .map-map img {
     width: 110%;
     height: 20%;
   }
 
-  .map-heading {
+  .tete-map {
     width: 100%;
     height: 20%;
     font-size: 10px;
   }
 
-  .countryInfo {
+  .les-infos {
     width: 50%;
     height: 12rem;
   }
 
-  .home-card-heading {
+  .card-home-carding {
     font-size: 25px;
     padding: 12px;
   }
 
-  .card-body {
+  .tete-corpes {
     font-size: 18px;
   }
 
-  .card-heading {
+  .tete-disk {
     font-size: 25px;
   }
 
   /* city page */
-  .cityBlockContainer {
+  .payee-blockes {
     display: inline-block;
     width: 100%;
     height: 15%;
   }
 
-  .cityBlock {
+  .ville-blo {
     height: 8rem;
     float: left;
   }
 
-  .city-headline {
+  .ville-tete {
     width: 140%;
     height: 15%;
     font-size: 28px;
     padding-right: 1em;
   }
 
-  .load-data-btn button {
+  .butn button {
     margin-left: 5.8rem;
     margin-top: 2.5em;
   }
 
   /* pollutiondata page */
-  .pollutionData {
+  .mauvais-data {
     width: 100%;
     padding: 1.5rem;
   }
 
-  .t-Heading th {
+  .trop-tete th {
     font-size: 12px;
   }
 
-  .pollution-data {
+  .trop-mauvais {
     font-size: 10px;
   }
 }
 
 @media only screen and (min-width: 500px) {
   /* home page */
-  .home-heading header {
+  .maison-pars header {
     margin-left: -1em;
   }
 
-  .countryInfo {
+  .les-infos {
     width: 50%;
   }
 
-  .cityBlockContainer {
+  .payee-blockes {
     width: 100%;
   }
 
-  .cityBlockContainer:nth-child(even) {
+  .payee-blockes:nth-child(even) {
     background-color: var(--light-pink);
   }
 
   /* pollutiondata page */
-  .pollutionData {
+  .mauvais-data {
     padding: 0.2rem;
     padding-top: 4rem;
     width: 100%;
@@ -311,38 +311,38 @@ button {
 
 @media only screen and (min-width: 700px) {
   /* home page */
-  .home-heading header {
+  .maison-pars header {
     margin-left: -1em;
     width: 100%;
     height: 50%;
   }
 
-  .countryInfo {
+  .les-infos {
     width: 100%;
   }
 
-  .cityBlockContainer {
+  .payee-blockes {
     width: 100%;
   }
 }
 
 @media only screen and (min-width: 900px) {
   /* navbar */
-  .nav-link {
+  .like {
     padding: 8px;
     font-size: 20px;
     display: flex;
     float: right;
   }
 
-  .link-1 {
+  .premiere-lynk {
     padding: 15px;
     font-size: 20px;
     display: flex;
     float: right;
   }
 
-  .searchBoxOuter input {
+  .regarde-out input {
     padding: 8px 8px;
     margin-left: 1em;
     border: 2px solid var(--light-pink);
@@ -362,85 +362,85 @@ button {
     border: none;
   }
 
-  .searchBoxOuter button {
+  .regarde-out button {
     padding: 8px 8px;
     font-size: 15px;
   }
 
   /* home page */
-  .home-heading {
+  .maison-pars {
     padding: 2em;
     width: 100%;
     height: 20%;
   }
 
-  .home-heading header {
+  .maison-pars header {
     display: inline-flex;
   }
 
-  .map-image {
+  .map-map {
     width: 70%;
     height: 20%;
   }
 
-  .map-heading {
+  .tete-map {
     font-size: 25px;
     text-align: center;
     padding-bottom: 8em;
   }
 
-  .map-heading h1 {
+  .tete-map h2 {
     padding-top: 5em;
     padding-left: 2em;
   }
 
-  .home-card-heading {
+  .card-home-carding {
     font-size: 35px;
     padding: 30px;
   }
 
-  .countryInfo {
+  .les-infos {
     width: 20%;
     height: 35vh;
   }
 
-  .card-heading {
+  .tete-disk {
     font-size: 35px;
   }
 
-  .card-t {
+  .tete-t {
     font-size: 25px;
   }
 
-  .cityBlockContainer {
+  .payee-blockes {
     width: 20%;
     height: 35vh;
     justify-content: center;
     text-align: center;
   }
 
-  .city-headline {
+  .ville-tete {
     font-size: 34px;
     padding-left: 4em;
     text-align: center;
   }
 
-  .load-data-btn {
+  .butn {
     padding-right: 5.5em;
   }
 
   /* pollutiondata page */
-  .pollutionData {
+  .mauvais-data {
     padding: 0.2rem;
     padding-top: 4rem;
     width: 100%;
   }
 
-  .t-Heading th {
+  .trop-tete th {
     font-size: 25px;
   }
 
-  .pollution-data {
+  .trop-mauvaise {
     font-size: 18px;
   }
 }
