@@ -1,38 +1,446 @@
-.App {
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --pink: #f03f83;
+  --dark-pink: #ec4c8a;
+  --light-pink: #fc5193;
+  --T: #51fcda;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: var(--pink);
+}
+
+/* navbar */
+.like {
+  padding: 8px;
+  font-size: 20px;
+  display: flex;
+  float: right;
+}
+
+.premiere-lynk {
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  float: right;
+}
+
+.regarde-out input {
+  padding: 8px 8px;
+  margin-left: 1em;
+  border: 2px solid var(--light-pink);
   text-align: center;
+  border-radius: 5px;
+  background-color: var(--dark-pink);
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* all buttons */
+button {
+  background-color: var(--pink);
+  padding: 5px;
+  font-size: 15px;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.regarde-out button {
+  padding: 0.5rem;
+  background-color: var(--pink);
+  border: 2px solid var(--light-pink);
+  border-radius: 5px;
+  margin: 0.5em;
+  color: black;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* home page */
+.les-infos {
+  display: inline-flex;
+  width: 20%;
+  height: 20rem;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--light-pink);
+}
+
+.les-infos:nth-child(2n + 2),
+.les-infos:nth-child(0) {
+  background-color: var(--pink);
+  border: 1px solid var(--dark-pink);
+}
+
+.maison-pars {
+  padding: 2em;
+  width: 100%;
+  height: 20%;
+}
+
+.maison-pars header {
+  display: inline-flex;
+}
+
+.map-map {
+  width: 100%;
+  height: 20%;
+}
+
+.tete-map {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 8em;
+}
+
+.tete-map h2 {
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+.card-home-carding {
+  font-size: 35px;
+  padding: 30px;
+}
+
+.tete-corpes {
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+/* city page */
+.payee-blockes {
+  margin: 0;
+  border: 1px solid var(--pink);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 20%;
+}
+
+.payee-blockes:nth-child(even) {
+  background-color: var(--light-pink);
+}
+
+.ville-tete {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  padding-top: 40px;
+}
+
+.tete-disk {
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.ville-blo {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+}
+
+/* pollutiondata page */
+.mauvais-data {
+  padding: 0.2rem;
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.fin-linee {
+  border: 2px solid var(--light-pink);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.trop-tete th {
+  font-size: 30px;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.trop-mauvais {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.trop-mauvais:nth-child(odd) {
+  background-color: var(--light-pink);
+}
+
+.trop-tete th:nth-child(even) {
+  background-color: var(--light-pink);
+}
+
+@media only screen and (min-width: 300px) {
+  /* navbar */
+  .regarde-out input {
+    padding: 2px 2px;
+    font-size: 9px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .regarde-out button {
+    margin: 0.4em;
+    padding: 2px 2px;
+    font-size: 8px;
+  }
+
+  .like {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .premiere-lynk {
+    padding: 14px;
+    font-size: 12px;
+  }
+
+  /* home page */
+  .map-map img {
+    width: 110%;
+    height: 20%;
+  }
+
+  .tete-map {
+    width: 100%;
+    height: 20%;
+    font-size: 10px;
+  }
+
+  .les-infos {
+    width: 50%;
+    height: 12rem;
+  }
+
+  .card-home-carding {
+    font-size: 25px;
+    padding: 12px;
+  }
+
+  .tete-corpes {
+    font-size: 18px;
+  }
+
+  .tete-disk {
+    font-size: 25px;
+  }
+
+  /* city page */
+  .payee-blockes {
+    display: inline-block;
+    width: 100%;
+    height: 15%;
+  }
+
+  .ville-blo {
+    height: 8rem;
+    float: left;
+  }
+
+  .ville-tete {
+    width: 140%;
+    height: 15%;
+    font-size: 28px;
+    padding-right: 1em;
+  }
+
+  .butn button {
+    margin-left: 5.8rem;
+    margin-top: 2.5em;
+  }
+
+  /* pollutiondata page */
+  .mauvais-data {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .trop-tete th {
+    font-size: 12px;
+  }
+
+  .trop-mauvais {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  /* home page */
+  .maison-pars header {
+    margin-left: -1em;
+  }
+
+  .les-infos {
+    width: 50%;
+  }
+
+  .payee-blockes {
+    width: 100%;
+  }
+
+  .payee-blockes:nth-child(even) {
+    background-color: var(--light-pink);
+  }
+
+  /* pollutiondata page */
+  .mauvais-data {
+    padding: 0.2rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  /* home page */
+  .maison-pars header {
+    margin-left: -1em;
+    width: 100%;
+    height: 50%;
+  }
+
+  .les-infos {
+    width: 100%;
+  }
+
+  .payee-blockes {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* navbar */
+  .like {
+    padding: 8px;
+    font-size: 20px;
+    display: flex;
+    float: right;
+  }
+
+  .premiere-lynk {
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    float: right;
+  }
+
+  .regarde-out input {
+    padding: 8px 8px;
+    margin-left: 1em;
+    border: 2px solid var(--light-pink);
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--dark-pink);
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  /* all buttons */
+  button {
+    background-color: var(--pink);
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+  }
+
+  .regarde-out button {
+    padding: 8px 8px;
+    font-size: 15px;
+  }
+
+  /* home page */
+  .maison-pars {
+    padding: 2em;
+    width: 100%;
+    height: 20%;
+  }
+
+  .maison-pars header {
+    display: inline-flex;
+  }
+
+  .map-map {
+    width: 70%;
+    height: 20%;
+  }
+
+  .tete-map {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 8em;
+  }
+
+  .tete-map h2 {
+    padding-top: 5em;
+    padding-left: 2em;
+  }
+
+  .card-home-carding {
+    font-size: 35px;
+    padding: 30px;
+  }
+
+  .les-infos {
+    width: 20%;
+    height: 35vh;
+  }
+
+  .tete-disk {
+    font-size: 35px;
+  }
+
+  .tete-t {
+    font-size: 25px;
+  }
+
+  .payee-blockes {
+    width: 20%;
+    height: 35vh;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ville-tete {
+    font-size: 34px;
+    padding-left: 4em;
+    text-align: center;
+  }
+
+  .butn {
+    padding-right: 5.5em;
+  }
+
+  /* pollutiondata page */
+  .mauvais-data {
+    padding: 0.2rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+
+  .trop-tete th {
+    font-size: 25px;
+  }
+
+  .trop-mauvaise {
+    font-size: 18px;
   }
 }
