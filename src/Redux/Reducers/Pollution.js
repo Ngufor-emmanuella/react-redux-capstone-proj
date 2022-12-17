@@ -5,7 +5,7 @@ const urlLatLon = 'https://api.openweathermap.org/geo/1.0/direct?q=';
 const urlAirData = 'https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=';
 const FETCH_AIRPOLLUTION = 'FETCH_AIRPOLLUTION';
 
-export const airOfPollution = createAsyncThunk(
+export const airpollution = createAsyncThunk(
   FETCH_AIRPOLLUTION,
   async (obj) => {
     const data = await (fetch(`${urlLatLon}${obj.cityname},${obj.countryname}&limit=1${key}`)).then((res) => res.json());
@@ -18,7 +18,7 @@ export const airOfPollution = createAsyncThunk(
   },
 );
 
-const pollutionByReducer = (state = [], action) => {
+const pollutionReducer = (state = [], action) => {
   switch (action.type) {
     case `${FETCH_AIRPOLLUTION}/fulfilled`: {
       return action.payload;
@@ -29,4 +29,4 @@ const pollutionByReducer = (state = [], action) => {
   }
 };
 
-export default pollutionByReducer;
+export default pollutionReducer;

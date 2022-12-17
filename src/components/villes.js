@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useLocation } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
-import { fetchOfCities } from '../Redux/Reducers/Cities';
+import { fetchCities } from '../Redux/Reducers/Cities';
 import '../App.css';
 
 const Villes = () => {
@@ -10,9 +10,9 @@ const Villes = () => {
   const location = useLocation();
   const infosCountrys = location.state.info;
   useEffect(() => {
-    dispatch(fetchOfCities(infosCountrys.name));
+    dispatch(fetchCities(infosCountrys.name));
   }, [infosCountrys.name, dispatch]);
-  const villes = useSelector((state) => state.citiesReducer);
+  const cities = useSelector((state) => state.citiesReducer);
 
   return (
     <section>
@@ -25,7 +25,7 @@ const Villes = () => {
               {infosCountrys.capital[0]}
               <br />
               No. of cities:
-              {villes.data?.length}
+              {cities.data?.length}
               <br />
             </p>
             <p className="tete-ecrie">
@@ -34,7 +34,7 @@ const Villes = () => {
             </p>
           </div>
         </div>
-        {villes.data?.map((city) => (
+        {cities.data?.map((city) => (
           <div className="payee-blockes" key={uuidv4()}>
             <div className="ville-blo">
               <div className="ville-tete">{city}</div>

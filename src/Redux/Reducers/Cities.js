@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 const url = 'https://countriesnow.space/api/v0.1/countries/cities';
 const FETCH_CITY = 'FETCH_CITY';
 
-export const fetchOfCities = createAsyncThunk(
+export const fetchCities = createAsyncThunk(
   FETCH_CITY,
   async (city) => {
     const data = await (fetch(url, {

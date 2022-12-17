@@ -65,7 +65,7 @@ const Maison = () => {
               <button type="submit">
                 <NavLink
                   className="like"
-                  to="/city"
+                  to="/villes"
                   state={{
                     info: country,
                   }}

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Villes from './components/city';
-import Maison from './components/home';
-import Navigation from './components/Navbar';
+import Villes from './components/villes';
+import Maison from './components/maison';
+import Navigation from './components/navigation';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Maison />} />
-        <Route path="/city" element={<Villes />} />
+        <Route path="/villes" element={<Villes />} />
       </Routes>
     </Router>
   );
