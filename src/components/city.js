@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { fetchCities } from '../Redux/Reducers/Cities';
 import '../App.css';
 
-const Cities = () => {
+const Villes = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const countryInfo = location.state.info;
@@ -60,4 +60,4 @@ const Cities = () => {
   );
 };
 
-export default Cities;
+export default Villes;

@@ -4,14 +4,14 @@ import '@testing-library/jest-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../Redux/ConfigureStore';
-import Home from '../components/home';
+import Maison from '../components/home';
 
-it('Home', () => {
+it('Maison', () => {
   const utils = render(
     <Provider store={store}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Maison />} />
         </Routes>
       </Router>
     </Provider>,

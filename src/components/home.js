@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { NavLink } from 'react-router-dom';
 import { fetchCountries, filteredCountries } from '../Redux/Reducers/Countries';
 
-const Home = () => {
+const Maison = () => {
   let countryName;
 
   const dispatch = useDispatch();
@@ -81,4 +81,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Maison;

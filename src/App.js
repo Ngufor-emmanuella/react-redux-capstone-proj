@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Cities from './components/city';
-import Home from './components/home';
-import Navbar from './components/Navbar';
+import Villes from './components/city';
+import Maison from './components/home';
+import Navigation from './components/Navbar';
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/city" element={<Cities />} />
+        <Route path="/" element={<Maison />} />
+        <Route path="/city" element={<Villes />} />
       </Routes>
     </Router>
   );

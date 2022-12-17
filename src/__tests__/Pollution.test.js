@@ -4,14 +4,14 @@ import '@testing-library/jest-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../Redux/ConfigureStore';
-import Pollution from '../components/Pollution';
+import Pollutes from '../components/Pollution';
 
-it('Pollution', () => {
+it('Pollutes', () => {
   const utils = render(
     <Provider store={store}>
       <Router>
         <Routes>
-          <Route path="/pollutiondata" element={<Pollution />} />
+          <Route path="/pollutiondata" element={<Pollutes />} />
         </Routes>
       </Router>
     </Provider>,

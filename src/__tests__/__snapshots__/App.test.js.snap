@@ -6,14 +6,14 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="home"
+        class="maison"
       >
         <div
-          class="searchBoxOuter"
+          class="regarde-out"
         >
           <input
-            class="countrySearch"
-            placeholder="Country Name"
+            class="payee-regarde"
+            placeholder="Name of country"
             type="text"
             value=""
           />
@@ -25,11 +25,11 @@ Object {
           </button>
         </div>
         <div
-          class="home-heading"
+          class="maison-pars"
         >
           <header>
             <div
-              class="map-image"
+              class="map-map"
             >
               <img
                 alt="Map Of Africa"
@@ -37,32 +37,32 @@ Object {
               />
             </div>
             <div
-              class="map-heading"
+              class="tete-map"
             >
-              <h1>
+              <h2>
                 Quality of air in
                 <br />
                 Africa.
-              </h1>
+              </h2>
             </div>
           </header>
         </div>
         <div
-          class="home-countries container"
+          class="payee-tout container"
         />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="home"
+      class="maison"
     >
       <div
-        class="searchBoxOuter"
+        class="regarde-out"
       >
         <input
-          class="countrySearch"
-          placeholder="Country Name"
+          class="payee-regarde"
+          placeholder="Name of country"
           type="text"
           value=""
         />
@@ -74,11 +74,11 @@ Object {
         </button>
       </div>
       <div
-        class="home-heading"
+        class="maison-pars"
       >
         <header>
           <div
-            class="map-image"
+            class="map-map"
           >
             <img
               alt="Map Of Africa"
@@ -86,18 +86,18 @@ Object {
             />
           </div>
           <div
-            class="map-heading"
+            class="tete-map"
           >
-            <h1>
+            <h2>
               Quality of air in
               <br />
               Africa.
-            </h1>
+            </h2>
           </div>
         </header>
       </div>
       <div
-        class="home-countries container"
+        class="payee-tout container"
       />
     </div>
   </div>,
